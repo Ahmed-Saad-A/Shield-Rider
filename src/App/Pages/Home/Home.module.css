@@ -1,0 +1,85 @@
+.homeContainer {
+  position: relative;
+  /* height: 100vh; */
+  background-color: #f5f9ff;
+  padding: 50px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.textBox {
+  max-width: 600px;
+  z-index: 2;
+}
+
+.textBox h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.textBox h1 span {
+  color: #007bff;
+}
+
+.textBox p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.ctaBtn {
+  padding: 12px 24px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background 0.3s ease;
+}
+
+.ctaBtn:hover {
+  background-color: #0056b3;
+}
+
+.carImg {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  max-height: 60%;
+  z-index: 1;
+}
+
+@keyframes rise {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(-200px) scale(1.8);
+    opacity: 0;
+  }
+}
+
+.smoke {
+  position: absolute;
+  bottom: 100px;
+  right: 150px;
+  width: 40px;
+  height: 40px;
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.3) 30%, transparent 80%);
+  border-radius: 50%;
+  opacity: 0.5;
+  animation: rise 4s ease-in-out infinite;
+  z-index: 0;
+  filter: blur(10px);
+}
+

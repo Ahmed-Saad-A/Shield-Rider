@@ -1,6 +1,6 @@
 .homeContainer {
   position: relative;
-  /* height: 100vh; */
+  height: 100vh;
   background-color: #f5f9ff;
   padding: 50px 40px;
   display: flex;
@@ -30,6 +30,7 @@
 }
 
 .ctaBtn {
+  width: 300px;
   padding: 12px 24px;
   background-color: #007bff;
   border: none;

@@ -1,8 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
 import carImg from "/src/assets/images/Logo.png";
-import styles from "./Home.module.css"
+import styles from "./Home.module.css";
 import { ArrowRight } from "lucide-react";
+import { NavLink } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -18,9 +19,9 @@ const Home = () => {
           Drive Safe with <span>ShieldRider</span>
         </h1>
         <p>The ultimate platform to insure your car quickly and easily.</p>
-        <button className={styles.ctaBtn}>
+        <NavLink to="/aply" className={`${styles.ctaBtn}`}>
           Get Started <ArrowRight size={20} />
-        </button>
+        </NavLink>
       </motion.div>
 
       <div className={styles.smoke}></div>
